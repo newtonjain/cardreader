@@ -18,21 +18,21 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         this.bindEvents();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+    bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
+    onDeviceReady: function () {
 
         // When the device is ready, hide the listening element
         app.hideElement('.listening');
@@ -43,9 +43,9 @@ var app = {
         // Initialize Triangle
         // TODO: change these values to values you obtain for your own application from triangle.io
         navigator.triangle.initialize(
-            "RNd6exF9vNWkD7l", // application ID
-            "XXMWEiaBcZ", // access key
-            "urjvry7iBs2LLwHdzCNHffUbN6l3FTMCobl2a2XU5qVt6cbgfqIyNuKew8Ilc4CH", // secret key
+            "DrPCPpHIwtsHLzb", // application ID
+            "OYXFEH0FVR", // access key
+            "c1manVCUsfQVxb5YGDiHUXE5EmciAPl19oI2TDTC3wk6FSrLAF1mmeWenhv1IjkD", // secret key
             function () // success callback
             {
                 // Hide that the device is ready, it's given now
@@ -66,22 +66,19 @@ var app = {
             }
         );
     },
-    showElement: function (css)
-    {
+    showElement: function (css) {
         var parentElement = document.getElementById('notifications');
         var element = parentElement.querySelector(css);
 
         element.setAttribute('style', 'display:block');
     },
-    hideElement: function (css)
-    {
+    hideElement: function (css) {
         var parentElement = document.getElementById('notifications');
         var element = parentElement.querySelector(css);
 
         element.setAttribute('style', 'display:none');
     },
-    onNewCard: function (card)
-    {
+    onNewCard: function (card) {
         console.log("Scanned card successfully.");
 
         // Display basic card information to the user
@@ -90,20 +87,17 @@ var app = {
         // may be available.
         var dataToShow = card.cardBrand;
         alert(dataToShow);
-        if (card.cardholderName != undefined)
-        {
+        if (card.cardholderName != undefined) {
             dataToShow += "\n" + card.cardholderName;
         }
         dataToShow += "\n**** **** **** " + card.lastFourDigits;
-         alert(JSON.stringify(card));
+        alert(JSON.stringify(card));
         alert(dataToShow);
     },
-    onTapDetect: function ()
-    {
+    onTapDetect: function () {
         console.log("Detected new tap.");
     },
-    onTapError: function(error)
-    {
+    onTapError: function (error) {
         console.log("Error processing contactless card.");
         console.error(error);
     }

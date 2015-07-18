@@ -1,0 +1,43 @@
+{
+  "changedFilesIos": [
+    ".git\\objects\\pack\\pack-85d04bb0bb93510a32715a44603be7f9e1eaf267.pack",
+    ".git\\objects\\pack\\pack-85d04bb0bb93510a32715a44603be7f9e1eaf267.idx",
+    ".git\\refs\\remotes\\origin\\master",
+    "plugins\\android.json",
+    "www\\css\\index.css",
+    ".git\\refs\\heads\\master",
+    "www\\js\\index.js",
+    "plugins\\io.triangle.cordova\\README.md",
+    ".git\\info\\exclude",
+    ".git\\logs\\refs\\remotes\\origin\\master",
+    ".git\\logs\\HEAD",
+    "plugins\\io.triangle.cordova\\doc\\index.md",
+    ".git\\HEAD",
+    ".git\\index",
+    ".git\\hooks\\README.sample",
+    "www\\index.html",
+    ".git\\config",
+    ".git\\logs\\refs\\heads\\master",
+    "taco.json",
+    "hooks\\README.md",
+    ".git\\description",
+    ".git\\ms-persist.xml",
+    "www\\img\\logo.png",
+    "plugins\\io.triangle.cordova\\.fetch.json",
+    "plugins\\io.triangle.cordova\\src\\android\\CardScanner.java",
+    "plugins\\io.triangle.cordova\\libs\\android\\triangle.io-1.0.6.jar",
+    "plugins\\io.triangle.cordova\\plugin.xml",
+    "plugins\\io.triangle.cordova\\www\\triangle.js",
+    "config.xml",
+    "plugins\\io.triangle.cordova\\src\\android\\cardscanner.java"
+  ],
+  "deletedFilesIos": [],
+  "addedPluginsIos": [],
+  "deletedPluginsIos": [],
+  "changedFiles": [
+    "plugins\\android.json"
+  ],
+  "deletedFiles": [],
+  "addedPlugins": [],
+  "deletedPlugins": []
+}
